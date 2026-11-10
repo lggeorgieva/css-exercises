@@ -3,12 +3,26 @@
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: Roboto, sans-serif;
 }
 
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.footer{
+  background: #eee;
+
+}
+
 img {
-  width: 600px;
+  width: 120px;
+  heigth: auto;
 }
 
 button {
@@ -24,3 +38,9 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.content{display: flex;
+         flex-direction: column;
+         align-items: center;
+        justify-content: center;
+      flex:1;}
